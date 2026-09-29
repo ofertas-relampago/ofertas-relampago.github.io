@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ofertas do Dia no WhatsApp</title>
+  <meta name="description" content="Promoções do Mercado Livre selecionadas todos os dias, direto no seu WhatsApp. Grátis.">
+  <meta property="og:title" content="Ofertas do Dia no WhatsApp">
+  <meta property="og:description" content="+10 promoções do Mercado Livre por dia. Entre no grupo, é grátis.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#128C7E">
+  <link rel="preconnect" href="https://connect.facebook.net">
+  <link rel="preconnect" href="https://analytics.tiktok.com">
+  <style>
+    :root {
+      --bg: #f4f6f5;
+      --card: #ffffff;
+      --text: #1b1f1d;
+      --muted: #5c6661;
+      --green: #1faa59;
+      --green-dark: #168a47;
+      --badge-bg: #fff4d6;
+      --badge-text: #7a5300;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1412;
+        --card: #18201c;
+        --text: #eef2f0;
+        --muted: #a3b0a9;
+        --badge-bg: #3a2f10;
+        --badge-text: #ffd978;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.45;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px 22px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 700;
+      font-size: 14px;
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+    h1 { font-size: 26px; line-height: 1.2; margin: 16px 0 10px; }
+    .sub { color: var(--muted); margin: 0 0 18px; }
+    ul { list-style: none; padding: 0; margin: 0 0 24px; text-align: left; display: inline-block; }
+    li { margin: 6px 0; }
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--green);
+      color: #fff;
+      font-size: 19px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(31, 170, 89, .35);
+      transition: transform .1s, background .2s;
+    }
+    .cta:hover { background: var(--green-dark); }
+    .cta:active { transform: scale(.98); }
+    .nota { font-size: 13px; color: var(--muted); margin: 12px 0 0; }
+    footer { margin-top: 20px; font-size: 12px; color: var(--muted); text-align: center; max-width: 420px; }
+    footer a { color: inherit; }
+  </style>
+  <script src="config.js"></script>
+</head>
+<body>
+  <main class="card">
+    <span class="badge">🔥 +10 ofertas por dia</span>
+    <h1>Promoções do Mercado Livre direto no seu WhatsApp</h1>
+    <p class="sub">Cupons, descontos relâmpago e preços baixos selecionados todos os dias.</p>
+    <ul>
+      <li>✅ Ofertas novas todos os dias</li>
+      <li>✅ 100% gratuito</li>
+      <li>✅ Saia quando quiser</li>
+    </ul>
+    <a id="cta" class="cta" href="#" rel="noopener">Entrar no grupo agora</a>
+    <p class="nota">Você será direcionado ao WhatsApp</p>
+  </main>
+  <footer>
+    Usamos cookies de medição (Meta e TikTok) para saber de onde vêm os visitantes.
+    <a href="privacidade.html">Política de privacidade</a>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
