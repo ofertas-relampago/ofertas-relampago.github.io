@@ -56,11 +56,11 @@ Isso gera `docs/config.js`. **Sempre que mudar o `.env`, rode de novo e publique
 
 ## 3. GitHub Pages (hospedagem da landing)
 
-1. Crie um repositório **público** no GitHub (ex.: `ofertas`).
+1. Repositório **público** `ofertas-relampago/ofertas-relampago.github.io` (organização no GitHub).
 2. Envie os arquivos (Git, GitHub Desktop, ou "Add file > Upload files" no site).
    O `.gitignore` já impede que `.env`, `dados/` e `relatorios/` subam.
 3. Settings > Pages > *Deploy from a branch* > `main` / pasta **`/docs`**.
-4. A página fica em `https://SEU_USUARIO.github.io/ofertas/`.
+4. A página fica em `https://ofertas-relampago.github.io/`.
 
 ## 4. Meta Ads
 
@@ -78,8 +78,8 @@ Isso gera `docs/config.js`. **Sempre que mudar o `.env`, rode de novo e publique
 
 Use links com UTM (o navegador do TikTok costuma não informar a origem sozinho):
 
-- Bio: `https://SEU_USUARIO.github.io/ofertas/?utm_source=tiktok&utm_medium=bio&utm_content=bio`
-- Por vídeo (comentário fixado / link): `...?utm_source=tiktok&utm_medium=video&utm_content=nome-do-video`
+- Bio: `https://ofertas-relampago.github.io/?utm_source=tiktok&utm_medium=bio&utm_content=bio`
+- Por vídeo (comentário fixado / link): `https://ofertas-relampago.github.io/?utm_source=tiktok&utm_medium=video&utm_content=nome-do-video`
 
 O relatório mostra quantos cliques cada vídeo gerou. `TIKTOK_PIXEL_ID` e as chaves de TikTok Ads
 só são necessários se um dia rodar anúncio pago lá.
@@ -106,6 +106,14 @@ python -m gestor relatorio --offline    # sem chamar APIs, usa o CSV local
 1. Crie um novo grupo e copie o link de convite.
 2. No `.env`: `GRUPOS_WHATSAPP=link1,link2` e `GRUPO_ATIVO=1`.
 3. `python -m gestor landing` e publique o `docs/config.js`. Nenhum anúncio precisa ser alterado.
+
+## Regras do programa de afiliados
+
+- O anúncio leva **sempre** para a landing (estrutura própria), nunca direto para link de afiliado.
+- Nada de Google/Bing/YouTube Ads, Search ou Shopping com produtos do Mercado Livre (gera banimento).
+- Não usar a logo do Mercado Livre nem parecer canal oficial; a marca é "Ofertas Relâmpago".
+- Declarar no cadastro de afiliado todos os canais: landing, grupo(s) do WhatsApp, Instagram/Facebook Ads.
+- Criativos próprios; evitar fotos de catálogo dos vendedores.
 
 ## Segurança
 
